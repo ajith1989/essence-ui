@@ -1,0 +1,12 @@
+export type TypographyTypes = 'caption' | 'header' | 'title' | 'subtitle' | 'headline' | 'body' | 'text' | 'small' | 'tiny';
+export type ThemeTypes = 'primary' | 'secondary' | 'accent1' | 'accent2' | 'success' | 'danger' | 'warning' | 'dark' | 'light';
+export type GradientTypes = 'gradient1' | 'gradient2' | 'dark' | 'light';
+export type Sizes = 'large' | 'medium' | 'small';
+export type TrendTypes = 'up' | 'down';
+export type InputTypes = 'text' | 'password' | 'select' | 'checkbox' | 'radio' | 'number' | 'textarea' | 'email' | 'range' | 'search' | 'tel' | 'url' | 'color' | 'time' | 'datetime' | 'datetime-local' | 'week' | 'month' | 'date' ;
+export type ListTypes = 'full' | 'compact' | 'thumbnail';
+export type LayoutTypes = 'dashboard' | 'auth';
+export type MenuTypes = 'vertical-collapsed' | 'vertical-expanded';
+export type RatingTypes = 'tag' | 'read-only' | 'full';
+export type DirectionTypes = 'vertical' | 'horizontal';
+export type WeatherConditions = 'drizzle' | 'lightning' | 'rain' | 'snow' | 'cloudy' | 'sunny' | 'storm' ;

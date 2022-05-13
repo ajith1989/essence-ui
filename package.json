@@ -1,0 +1,44 @@
+{
+  "name": "essence-ui",
+  "version": "1.0.0",
+  "description": "React ui component library with tailwind",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run build:css",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/essence-ui.css --minify"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "tailwind"
+  ],
+  "author": "Ajith Mathew",
+  "license": "ISC",
+  "devDependencies": {
+    "@headlessui/react": "^1.6.1",
+    "@tailwindcss/forms": "^0.5.1",
+    "@types/node": "^17.0.33",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "cuid": "^2.1.8",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-feather": "^2.0.9",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "@headlessui/react": "^1.6.1",
+    "cuid": "^2.1.8",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-feather": "^2.0.9"
+  }
+}
