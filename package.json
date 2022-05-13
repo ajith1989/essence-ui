@@ -11,7 +11,9 @@
     "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run build:css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/essence-ui.css --minify"
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/essence-ui.css --minify",
+    "commit": "cz",
+    "acp": "git add . && npm run commit && git push"
   },
   "keywords": [
     "react",
@@ -28,6 +30,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "cuid": "^2.1.8",
+    "cz-conventional-changelog": "^3.3.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-feather": "^2.0.9",
@@ -40,5 +43,10 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-feather": "^2.0.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
