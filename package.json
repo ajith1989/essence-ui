@@ -14,7 +14,8 @@
     "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/essence-ui.css --minify",
     "commit": "cz",
     "push": "git add . && npm run commit && git push",
-    "release": "standard-version"
+    "release": "standard-version",
+    "publish": "git push --follow-tags origin main && npm publish --access public"
   },
   "keywords": [
     "react",
