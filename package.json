@@ -1,7 +1,7 @@
 {
   "name": "essence-ui",
   "version": "1.0.2",
-  "description": "React ui component library with tailwind",
+  "description": "React ui component library with tailwind css",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
